@@ -4,21 +4,20 @@
 alert("Hello user! We will ask you some questions, ok?");
 let userAnswer = confirm("are you a human?");
 console.log(userAnswer);
-let userName = prompt('What is your name?', '');
+let userName = prompt("What is your name?", "");
 console.log(userName);
-let userAge = prompt('How old are you?', '');
+let userAge = prompt("How old are you?", "");
 console.log(userAge);
 console.log(typeof userAge);
-let userGender = prompt('What is your gender?', '');
+let userGender = prompt("What is your gender?", "");
 console.log(userGender);
 console.log(typeof userGender);
 
 // Ex-2
 // ### Работа с операторами.
 // 1. Используя конструкцию `if..else`, напишите код, который получает число через `prompt`, а затем выводит в `alert`.
-let userAge2 = prompt('How old are you?', '')
-alert("You are "+userAge2+ " years old!")
-
+let userAge2 = prompt("How old are you?", "");
+alert("You are " + userAge2 + " years old!");
 
 //Ex-3
 // ### Работа с условиями.
@@ -42,10 +41,10 @@ alert("You are "+userAge2+ " years old!")
 // }
 
 //with switch statemet:
-let a = +prompt('a?', '');
-console.log(a) // string
-a = +a
-console.log(a) // number
+let a = +prompt("a?", "");
+console.log(a); // string
+a = +a;
+console.log(a); // number
 
 switch (a) {
   case 0:
@@ -56,8 +55,30 @@ switch (a) {
     break;
   case 2:
   case 3:
-    alert('2,3');
+    alert("2,3");
     break;
   default:
     console.log("the code is different from all given cases");
+}
+
+// Ex-4
+// ### Работа с циклами(loops).
+// 1. Посчитайте сумму всех четных чисел в промежутке 1-100. Выведите в консоль.
+let sum = 0;
+for (let i = 1; i <= 100; i++) {
+  if (i % 2 === 0) {
+    sum += i;
+  }
+}
+console.log(sum);
+
+// 2.  Перепишите цикл `for` на `while`.
+// for (let i = 0; i < 3; i++) {
+//   alert( `number ${i}!` );
+// }
+// below is a new code:
+let i = 0;
+while (i < 3) {
+  alert(`number ${i}!`);
+  i++;
 }
