@@ -19,11 +19,11 @@ console.log(typeof userGender);
 let userAge2 = prompt("How old are you?", "");
 if(num > 0){
   alert("Good!");
-};
+}
 else if(num < 0){
   alert("Incorrect imput");
-  };
-  else{
+  }
+  else {
   alert("Are you a newborn?");
   };
 
