@@ -17,7 +17,15 @@ console.log(typeof userGender);
 // ### Работа с операторами.
 // 1. Используя конструкцию `if..else`, напишите код, который получает число через `prompt`, а затем выводит в `alert`.
 let userAge2 = prompt("How old are you?", "");
-alert("You are " + userAge2 + " years old!");
+if(num > 0){
+  alert("Good!");
+};
+else if(num < 0){
+  alert("Incorrect imput");
+  };
+  else{
+  alert("Are you a newborn?");
+  };
 
 //Ex-3
 // ### Работа с условиями.
